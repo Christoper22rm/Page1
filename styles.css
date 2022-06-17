@@ -1,0 +1,620 @@
+/*lettering style*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@300;400;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#Home {
+    /*linear-gradient(rgba(0, 0, 0, .7) rgba(0, 0, 0, .7)),*/
+    background-image: url(img/971.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#Home .container header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#Home .container header .container-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#Home .container header .container-header h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#Home .container header .container-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#Home .container header .container-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transform: .5s;
+}
+
+#Home .container header .container-header nav ul a:hover {
+    color: #FA7D09;
+}
+
+#Home .container header .container-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#Home .container header .container-header .redes a:hover {
+    color: #FA7D09;
+}
+
+#Home .container header .container-header .seleccionado {
+    color: #FA7D09;
+}
+
+#Home .container .presentation {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #FA7D09;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Home .container .presentation .welcome {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#Home .container .presentation h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#Home .container .presentation h2 span{
+    font-size: 25px;
+    color: #fff;
+}
+
+#Home .container .presentation .description {
+    max-width: 700px;
+    margin: 25 px auto;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+#Home .container .presentation a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#Home .container .presentation a:hover {
+    background-color: #FA7D09;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+/* ABOUT ME SECTION */
+
+#aboutme {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#aboutme .container-img {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#aboutme .container-img img {
+    padding: 20px;
+    width: 120%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#aboutme .about-me {
+    margin: 0 40px;
+}
+
+#aboutme .about-me -title-section {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#aboutme .about-me h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#aboutme .about-me h2 span {
+    color: #FA7D09;
+}
+
+#aboutme .about-me h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#aboutme .about-me p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#aboutme .about-me a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#aboutme .about-me a:hover {
+    background-color: #FA7D09;
+    color: #fff;
+}
+
+/*Servicios*/
+
+#services {
+    padding: 100px;
+    text-align: center;
+    background-color: #111135;
+}
+
+#services .title-services {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FA7D09;
+    text-decoration: underline;
+    text-decoration-color: #111135;
+    text-decoration-thickness: 5px;
+}
+
+#services .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#services .fila .services {
+    max-width: 350px;
+    background-color: #ECE5C7;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#services .fila .services:hover {
+    box-shadow: 5px 5px 10px #FA7D09;
+}
+
+#services .fila .services h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#services .fila .services .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#services .fila .services hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#services .fila .services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#services .fila .services p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*skills*/
+
+.container-skill {
+    background: linear-gradient( #eb5a5acc, rgna(33,16,16,.8), url("img/ecuador.jpg"));
+    background-image: url(img/lama.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container-skill .skill {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.container-skill .skill .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-skill .skill p {
+    color: #111135;
+}
+
+.container-skill .skill .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.container-skill .skill .barra {
+    background-color: #565656;
+    width: 100%;
+    height: 6px;
+    margin: 10px;
+}
+
+/*Javascript*/
+
+.container-skill .skill .barra .barra-progreso1 {
+    background-color: #fff;
+    width: 90%;
+    height: 6px;
+    animation:  progreso1 2s forwards;
+}
+
+.container-skill .skill .barra .barra-progreso2 {
+    background-color: #fff;
+    width: 87%;
+    height: 6px;
+    animation:  progreso1 2s forwards;
+}
+
+.container-skill .skill .barra .barra-progreso3 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation:  progreso1 2s forwards;
+}
+
+.container-skill .skill .barra .barra-progreso4 {
+    background-color: #fff;
+    width: 80%;
+    height: 6px;
+    animation:  progreso1 2s forwards;
+}
+
+.container-skill .skill .barra .barra-progreso5 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation:  progreso1 2s forwards;
+}
+
+/*animaciones de la barras*/
+
+@keyframes progreso1 {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes progreso2 {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 87%;
+    }
+}
+@keyframes progreso3 {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@keyframes progreso4 {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes progreso5 {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+/*My Portfolio*/
+
+#portfolio {
+    max-width: 1200px;
+    padding: px 0;
+    margin: auto;
+}
+
+#portfolio .title-section {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+}
+
+#portfolio .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .fila .proyectos {
+    max-width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .fila .proyectos img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portfolio .fila .proyectos:hover img{
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyectos .info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #FA7D09;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyectos:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/*Contact*/
+
+#Contact {
+    padding: 100px 15px;
+}
+
+#Contact .title-section {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+}
+
+#Contact .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#Contact .contenedor-form .fila {
+    margin-bottom: 20px;
+}
+
+#Contact .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Contact .contenedor-form input,
+#Contact .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#Contact .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#Contact .contenedor-form .input-full {
+    width: 100%;
+}
+
+#Contact .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#Contact .btn-enviar:hover {
+    background-color: #FA7D09;
+    color: #f3f3f3;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+/*Resposive*/
+
+@media screen and (max-width:800px) {
+    .redes {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul{
+       display: block !important;
+       text-align: center;
+
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #aboutme .about-me h2 {
+        font-size: 40px;
+    }
+    #aboutme {
+        padding: 50px 0;
+        display: block;
+    }
+    #aboutme .container-img {
+        max-width: 200px;
+        margin: auto;    
+    }
+    #aboutme .container-img img {
+        padding: 8px;
+    }
+    #aboutme .about-me .title-section {
+        text-align: center;
+    }
+    #aboutme .about-me h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #services {
+        padding: 50px 15px;
+    }
+    #services .fila {
+        display: block;
+    }
+    #services .fila .services {
+        margin: 10px auto;
+    }
+
+    .container-skill {
+        padding: 50px 20px;
+    }
+
+    #portfolio {
+        padding: 50px 0;
+    }
+    #portfolio .fila {
+        display: block;
+    }
+    #portfolio .fila .proyectos {
+        margin: 10px auto;
+    }
+
+    #contact {
+        padding: 50px 15px; 
+    }
+    #contact .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contact .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

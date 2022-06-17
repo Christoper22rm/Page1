@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="styles.css">
+    <title>Christoper E. Calvachi</title>
+</head>
+<body>
+    <!--home section-->
+    <section id="Home">
+        <div class="container">
+            <header>
+                <div class="container-header">
+                    <h1>KYQUE</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#Home" class="seleccionado" onclick="seleccionar(this)">Home</a></li>
+                            <li><a href="#aboutme" onclick="seleccionar(this)">About me</a></li>
+                            <li><a href="#services" onclick="seleccionar(this)">Service</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">Skills</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">My Projets</a></li>
+                            <li><a href="#Contact" onclick="seleccionar(this)">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Icons of the back menu-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--social network icons-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Christoper22rm" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/christoper-enrique-calvachi-carabajo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="Welcome">Welcome</p>
+                <h2>I am <span>Christoper Calvachi</span>, Web Developer</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia aliquam 
+                    asperiores illo tempore repudiandae dolor! Dolore, asperiores? </p>
+                    <a href="#portfolio">go to portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--about me section -->
+    <section id="aboutme">
+        <div class="container-img">
+            <img src="img/fotoperfil.jpg" alt="">
+        </div>
+        <div class="about-me">
+            <p class="title-section">About Me</p>
+            <h2>Hi, I'm <span> Christoper Calvachi</span></h2>
+            <h3>Web Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, 
+                itaque dolorem corrupti labore assumenda debitis vero commodi quod 
+                optio cumque illo incidunt placeat voluptatem nisi rerum numquam quis ipsam 
+                ducimus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+                <a href="Resume/Christoper's Resume.pdf" target="_blank">See Resume</a>
+        </div>
+    </section>
+
+    <!--services section -->
+    <section id="services">
+        <h3 class="title-services">My Services</h3>
+        <div class="fila">
+            <div class="services">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Web design</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur velit corrupti dolores ab. Illum, enim beatae cum veritatis omnis 
+                    voluptatum voluptatibus dolores.</p>
+            </div>
+            <div class="services">
+                <span class="icono"><i class="fa-solid fa-brain-arrow-curved-right"></i></span>
+                <h4>Providing solutions</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>UX</li>
+                    <li>IX</li>
+                    <li>Design</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur velit corrupti dolores ab. Illum, enim beatae cum veritatis omnis 
+                    voluptatum voluptatibus dolores.</p>
+            </div>
+            <div class="services">
+                <span class="icono"><i class="fa-solid fa-face-saluting"></i></span>
+                <h4>Product Planning</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur velit corrupti dolores ab. Illum, enim beatae cum veritatis omnis 
+                    voluptatum voluptatibus dolores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Section skill-->
+    <div class="container-skill" id="skills">
+       <h3>My Skills</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML5 & CSS3</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>  
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">87%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>React</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="re" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>MySQL</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="my" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Database</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="db" class="barra-progreso5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--PORTFOLIO-->
+    <section id="portfolio">
+        <h3 class="title-section">My Projects</h3>
+        <div class="fila">
+            <div class="proyectos">
+                <div class="overlay"></div>
+                <img src="img/japon.jpg" alt="">
+                <div class="info">
+                    <h4>Jojma Videogame</h4>
+                    <p>Video game project for the Church of Jesus Christ of Latter-Day Saints</p>
+                </div>
+            </div>
+            <div class="proyectos">
+                <div class="overlay"></div>
+                <img src="img/clima.jpg" alt="">
+                <div class="info">
+                    <h4>Look at the weather</h4>
+                    <p>Check the weather before leaving home </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section id="portfolio">
+        <div class="fila">
+            <div class="proyectos">
+                <div class="overlay"></div>
+                <img src="img/UE2DA.jpg" alt="">
+                <div class="info">
+                    <h4>Web page for educational development</h4>
+                    <p>Design a website for an educational institution.</p>
+                </div>
+            </div>
+            <div class="proyectos">
+                <div class="overlay"></div>
+                <img src="img/e-commerce.jpg" alt="">
+                <div class="info">
+                    <h4>The mall at your home </h4>
+                    <p>Design a 100% virtual mall</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!--Contact-->
+    <section id="Contact">
+        <h3 class="title-section">You may contact me here</h3>
+        <div class="contenedor-form">
+            <form action="">
+              <div class="fila mitad">
+                <input type="text" placeholder="full name" class="input-mitad">
+                <input type="text" placeholder="e-mail address" class="input-mitad">
+              </div>
+              <div class="fila">
+                <input type="text" placeholder="Text..." class="input-full">
+              </div>
+              <div class="fila">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your message " class="input-full"></textarea>
+              </div>
+              <input type="submit" value="send message" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>Mucho mejor si esta Hecho en Ecuador - 2021</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
